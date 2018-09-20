@@ -13,17 +13,17 @@ const app = new Vue({
     el: '#app',
     data: {
     	
-    		message: '',
+    		messageToSend: '',
     		chat: {
     			messages: []
     		}
     },
     methods: {
     	sendMessage(){
-    		console.log("send mesage")
-    		if (this.message.length != 0) {
-    			this.chat.messages.push(this.message)
-    			this.message = ''
+    		
+    		if (this.messageToSend.length != 0) {
+    			this.chat.messages.push(this.messageToSend)
+    			this.messageToSend = ''
     		}
 
     		
